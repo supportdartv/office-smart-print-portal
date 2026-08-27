@@ -20,12 +20,17 @@ export class StorageService {
     const ext = originalFilename.split('.').pop()?.toLowerCase() || (mimeType === 'application/pdf' ? 'pdf' : '');
     const storagePath = `documents/${fileId}.${ext}`;
 
-    // Upload directly to Supabase Storage
+    // Upload directly to Supabase Storage with strict error handling
     if (store.supabase) {
-      await store.supabase.storage.from('print-files').upload(storagePath, buffer, {
+      const { error } = await store.supabase.storage.from('print-files').upload(storagePath, buffer, {
         contentType: mimeType,
         upsert: true
       });
+      
+      if (error) {
+        console.error('[Supabase Upload Error]', error);
+        throw new Error(`Cloud Storage Error: ${error.message}. Ensure your 'print-files' bucket exists.`);
+      }
     }
 
     const checksum = crypto.createHash('sha256').update(buffer).digest('hex');
