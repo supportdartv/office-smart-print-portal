@@ -1,0 +1,10 @@
+# Office Smart Print Gateway - Dependencies
+# ===================================================================
+# NOTE: The gateway now runs 100% OFFLINE with Python's standard library!
+# NO pip packages are required to run the gateway on your office PC.
+#
+# Optional enhancement packages (not required for operation):
+# requests>=2.31.0
+# python-dotenv>=1.0.0
+# pywin32>=306
+
