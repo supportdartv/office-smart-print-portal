@@ -1,0 +1,6 @@
+{
+  "name": "Office Smart Print Portal",
+  "description": "QR-based document upload and remote-printing system for office WLAN printers with secure payment abstraction and print gateway.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
