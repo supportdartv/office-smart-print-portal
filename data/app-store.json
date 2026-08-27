@@ -1,0 +1,338 @@
+{
+  "files": {
+    "test-file-01": {
+      "id": "test-file-01",
+      "originalFilename": "quarterly_report.pdf",
+      "storagePath": "/tmp/test.pdf",
+      "mimeType": "application/pdf",
+      "fileSize": 51200,
+      "pageCount": 8,
+      "checksum": "dummy-checksum-sha256",
+      "status": "READY",
+      "createdAt": "2026-08-27T04:43:11.079Z",
+      "expiresAt": "2026-08-27T05:13:11.079Z"
+    }
+  },
+  "printJobs": {
+    "38f49322-fc65-4b89-953a-a6135f4833d5": {
+      "id": "38f49322-fc65-4b89-953a-a6135f4833d5",
+      "sessionId": "session-test-123",
+      "fileId": "test-file-01",
+      "stationId": "station-01",
+      "printerId": "printer-main-01",
+      "printType": "BLACK_WHITE",
+      "pageCount": 8,
+      "copies": 1,
+      "pricePerPage": 200,
+      "totalAmount": 1600,
+      "currency": "INR",
+      "paymentRequired": true,
+      "paymentVerified": false,
+      "status": "WAITING_PAYMENT",
+      "createdAt": "2026-08-27T04:26:44.346Z",
+      "expiresAt": "2026-08-27T04:56:44.346Z"
+    },
+    "6c06e0ac-bdae-4193-9990-298b0aeb7c61": {
+      "id": "6c06e0ac-bdae-4193-9990-298b0aeb7c61",
+      "sessionId": "session-test-456",
+      "fileId": "test-file-01",
+      "stationId": "station-01",
+      "printerId": "printer-main-01",
+      "printType": "OFFICIAL",
+      "pageCount": 8,
+      "copies": 1,
+      "pricePerPage": 0,
+      "totalAmount": 0,
+      "currency": "INR",
+      "paymentRequired": false,
+      "paymentVerified": true,
+      "status": "QUEUED",
+      "createdAt": "2026-08-27T04:26:44.347Z",
+      "expiresAt": "2026-08-27T04:56:44.347Z",
+      "queuedAt": "2026-08-27T04:26:44.348Z"
+    },
+    "8dcf4bf1-ab68-4697-9f36-758fad722399": {
+      "id": "8dcf4bf1-ab68-4697-9f36-758fad722399",
+      "sessionId": "session-test-123",
+      "fileId": "test-file-01",
+      "stationId": "station-01",
+      "printerId": "printer-main-01",
+      "printType": "BLACK_WHITE",
+      "pageCount": 8,
+      "copies": 1,
+      "pricePerPage": 200,
+      "totalAmount": 1600,
+      "currency": "INR",
+      "paymentRequired": true,
+      "paymentVerified": false,
+      "status": "WAITING_PAYMENT",
+      "createdAt": "2026-08-27T04:43:11.079Z",
+      "expiresAt": "2026-08-27T05:13:11.079Z"
+    },
+    "b0f0d9ad-2151-42f0-84e4-9d58092e2d98": {
+      "id": "b0f0d9ad-2151-42f0-84e4-9d58092e2d98",
+      "sessionId": "session-test-456",
+      "fileId": "test-file-01",
+      "stationId": "station-01",
+      "printerId": "printer-main-01",
+      "printType": "OFFICIAL",
+      "pageCount": 8,
+      "copies": 1,
+      "pricePerPage": 0,
+      "totalAmount": 0,
+      "currency": "INR",
+      "paymentRequired": false,
+      "paymentVerified": true,
+      "status": "QUEUED",
+      "createdAt": "2026-08-27T04:43:11.081Z",
+      "expiresAt": "2026-08-27T05:13:11.081Z",
+      "queuedAt": "2026-08-27T04:43:11.082Z"
+    }
+  },
+  "payments": {},
+  "officialPrints": {
+    "570cd69e-ef7a-48bc-b670-4edfb9256a58": {
+      "id": "570cd69e-ef7a-48bc-b670-4edfb9256a58",
+      "jobId": "6c06e0ac-bdae-4193-9990-298b0aeb7c61",
+      "employeeId": "EMP-1024",
+      "section": "Engineering",
+      "purpose": "Architecture Spec Review",
+      "approved": true,
+      "createdAt": "2026-08-27T04:26:44.348Z"
+    },
+    "913826c4-6e45-4441-ab08-292178f2383a": {
+      "id": "913826c4-6e45-4441-ab08-292178f2383a",
+      "jobId": "b0f0d9ad-2151-42f0-84e4-9d58092e2d98",
+      "employeeId": "EMP-1024",
+      "section": "Engineering",
+      "purpose": "Architecture Spec Review",
+      "approved": true,
+      "createdAt": "2026-08-27T04:43:11.082Z"
+    }
+  },
+  "printers": {
+    "printer-main-01": {
+      "id": "printer-main-01",
+      "name": "HP LaserJet Pro M404dw (WLAN)",
+      "ipAddress": "192.168.1.105",
+      "hostname": "hp-laserjet-office.local",
+      "location": "Ground Floor Copy & Print Corner",
+      "status": "ONLINE",
+      "lastSeen": "2026-08-27T04:26:44.343Z",
+      "enabled": true,
+      "createdAt": "2026-08-27T04:26:44.343Z",
+      "health": {
+        "inkLevel": 82,
+        "blackInkLevel": 85,
+        "colorInkLevel": 78,
+        "paperStatus": "OK",
+        "paperLevel": 75,
+        "paperTrayText": "Tray 1 (A4) • Ready",
+        "connectivity": "ONLINE",
+        "signalStrength": "STRONG",
+        "latencyMs": 14,
+        "lastUpdated": "2026-08-27T04:43:11.077Z",
+        "queueLength": 0
+      }
+    }
+  },
+  "stations": {
+    "station-01": {
+      "id": "station-01",
+      "stationCode": "office-printer-01",
+      "name": "Station 1 - Ground Floor Print Hub",
+      "printerId": "printer-main-01",
+      "qrToken": "qr-token-sec-9a8b7c",
+      "locationDesc": "Near Reception Desk & Workstations",
+      "enabled": true,
+      "createdAt": "2026-08-27T04:26:44.343Z"
+    }
+  },
+  "gatewayDevices": {
+    "gw-office-pc-01": {
+      "id": "gw-office-pc-01",
+      "name": "Office Print Agent (Dell OptiPlex 7090)",
+      "stationId": "station-01",
+      "deviceTokenHash": "16e29c592c06d7e139b374d1fcd1ab25767e5079627af54095a91c5eb800d983",
+      "status": "ONLINE",
+      "osInfo": "Windows 11 Pro 64-bit / LibreOffice 7.6.4 / WinSpool",
+      "lastSeen": "2026-08-27T04:26:44.343Z",
+      "createdAt": "2026-08-27T04:26:44.343Z"
+    }
+  },
+  "auditLogs": [
+    {
+      "id": "143c06dc-1d9c-43f2-9a77-4cd4537c2982",
+      "event": "JOB_QUEUED",
+      "jobId": "b0f0d9ad-2151-42f0-84e4-9d58092e2d98",
+      "metadata": {
+        "stationId": "station-01",
+        "pages": 8,
+        "printType": "OFFICIAL"
+      },
+      "createdAt": "2026-08-27T04:43:11.083Z"
+    },
+    {
+      "id": "fe771f5f-6ff0-4654-8f91-28ebf0eeca00",
+      "event": "OFFICIAL_PRINT_CONFIRMED",
+      "jobId": "b0f0d9ad-2151-42f0-84e4-9d58092e2d98",
+      "metadata": {
+        "employeeId": "EMP-1024",
+        "section": "Engineering",
+        "purpose": "Architecture Spec Review"
+      },
+      "createdAt": "2026-08-27T04:43:11.082Z"
+    },
+    {
+      "id": "b0e37077-8b98-4590-8399-905e2f0a3c5e",
+      "event": "PRINT_OPTION_SELECTED",
+      "jobId": "b0f0d9ad-2151-42f0-84e4-9d58092e2d98",
+      "metadata": {
+        "printType": "OFFICIAL",
+        "price": 0,
+        "status": "OFFICIAL_PENDING_CONFIRMATION"
+      },
+      "createdAt": "2026-08-27T04:43:11.082Z"
+    },
+    {
+      "id": "f7d6c4f0-6ff4-4073-a136-20e52869a8f8",
+      "event": "PRINT_JOB_CREATED",
+      "jobId": "b0f0d9ad-2151-42f0-84e4-9d58092e2d98",
+      "metadata": {
+        "fileId": "test-file-01",
+        "pages": 8,
+        "stationId": "station-01"
+      },
+      "createdAt": "2026-08-27T04:43:11.081Z"
+    },
+    {
+      "id": "f10fb774-e6d5-4fcd-9c1a-b440b0305524",
+      "event": "PRINT_OPTION_SELECTED",
+      "jobId": "8dcf4bf1-ab68-4697-9f36-758fad722399",
+      "metadata": {
+        "printType": "BLACK_WHITE",
+        "totalAmountPaise": 1600,
+        "status": "WAITING_PAYMENT"
+      },
+      "createdAt": "2026-08-27T04:43:11.080Z"
+    },
+    {
+      "id": "619870e7-7333-46e9-9384-b1a041fda0ad",
+      "event": "PRINT_JOB_CREATED",
+      "jobId": "8dcf4bf1-ab68-4697-9f36-758fad722399",
+      "metadata": {
+        "fileId": "test-file-01",
+        "pages": 8,
+        "stationId": "station-01"
+      },
+      "createdAt": "2026-08-27T04:43:11.079Z"
+    },
+    {
+      "id": "711a8933-f0e9-44bf-80ee-66bed905910a",
+      "event": "USER_SESSION_CREATED",
+      "metadata": {
+        "sessionId": "998ff204-87ee-4c4e-8527-dcd1430d7813",
+        "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+        "ip": "127.0.0.1"
+      },
+      "createdAt": "2026-08-27T04:37:19.559Z"
+    },
+    {
+      "id": "a9713d69-5774-4520-b7ed-2ee58b24ed3d",
+      "event": "USER_SESSION_CREATED",
+      "metadata": {
+        "sessionId": "07d83c03-4a19-4959-a278-fcb2f11c4a8c",
+        "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
+        "ip": "127.0.0.1"
+      },
+      "createdAt": "2026-08-27T04:37:19.509Z"
+    },
+    {
+      "id": "3ee768cc-c436-4be1-86d7-a83b1ea7937b",
+      "event": "JOB_QUEUED",
+      "jobId": "6c06e0ac-bdae-4193-9990-298b0aeb7c61",
+      "metadata": {
+        "stationId": "station-01",
+        "pages": 8,
+        "printType": "OFFICIAL"
+      },
+      "createdAt": "2026-08-27T04:26:44.349Z"
+    },
+    {
+      "id": "cefdc04b-3ac0-4916-89f6-a30d01f1ba26",
+      "event": "OFFICIAL_PRINT_CONFIRMED",
+      "jobId": "6c06e0ac-bdae-4193-9990-298b0aeb7c61",
+      "metadata": {
+        "employeeId": "EMP-1024",
+        "section": "Engineering",
+        "purpose": "Architecture Spec Review"
+      },
+      "createdAt": "2026-08-27T04:26:44.348Z"
+    },
+    {
+      "id": "1d872672-8c40-4d0f-a1b5-42c12cdb0f1b",
+      "event": "PRINT_OPTION_SELECTED",
+      "jobId": "6c06e0ac-bdae-4193-9990-298b0aeb7c61",
+      "metadata": {
+        "printType": "OFFICIAL",
+        "price": 0,
+        "status": "OFFICIAL_PENDING_CONFIRMATION"
+      },
+      "createdAt": "2026-08-27T04:26:44.348Z"
+    },
+    {
+      "id": "c0c6c7e6-1371-410b-904e-15771275e1c4",
+      "event": "PRINT_JOB_CREATED",
+      "jobId": "6c06e0ac-bdae-4193-9990-298b0aeb7c61",
+      "metadata": {
+        "fileId": "test-file-01",
+        "pages": 8,
+        "stationId": "station-01"
+      },
+      "createdAt": "2026-08-27T04:26:44.347Z"
+    },
+    {
+      "id": "f76d5b7b-585c-4a02-9041-cf43f3b104d6",
+      "event": "PRINT_OPTION_SELECTED",
+      "jobId": "38f49322-fc65-4b89-953a-a6135f4833d5",
+      "metadata": {
+        "printType": "BLACK_WHITE",
+        "totalAmountPaise": 1600,
+        "status": "WAITING_PAYMENT"
+      },
+      "createdAt": "2026-08-27T04:26:44.347Z"
+    },
+    {
+      "id": "023d562f-b9c3-40fd-b288-18e7c7e9a1cb",
+      "event": "PRINT_JOB_CREATED",
+      "jobId": "38f49322-fc65-4b89-953a-a6135f4833d5",
+      "metadata": {
+        "fileId": "test-file-01",
+        "pages": 8,
+        "stationId": "station-01"
+      },
+      "createdAt": "2026-08-27T04:26:44.346Z"
+    },
+    {
+      "id": "fd3ccc04-f91c-47ab-b450-c39399f0a7b6",
+      "event": "STORE_SEEDED",
+      "metadata": {
+        "printerId": "printer-main-01",
+        "stationId": "station-01",
+        "gatewayId": "gw-office-pc-01"
+      },
+      "createdAt": "2026-08-27T04:26:44.344Z"
+    }
+  ],
+  "settings": {
+    "blackWhitePricePaise": 200,
+    "colorPricePaise": 500,
+    "officialPricePaise": 0,
+    "merchantUpiId": "7006686584@icici",
+    "merchantName": "Office Smart Print",
+    "paymentProvider": "DEMO",
+    "demoMode": true,
+    "fileRetentionMinutes": 10,
+    "jobExpiryMinutes": 30
+  }
+}
